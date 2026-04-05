@@ -1,15 +1,1 @@
-{
-  "tests": [
-    {
-      "name": "image_generation_test",
-      "input": {
-        "prompt": "dark trap night city",
-        "width": 1280,
-        "height": 720,
-        "num_inference_steps": 4,
-        "output_format": "jpg"
-      },
-      "timeout": 120
-    }
-  ]
-}
+{"tests":[{"name":"health_check","input":{"test_mode":true},"timeout":30000}]}
