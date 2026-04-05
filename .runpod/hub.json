@@ -1,0 +1,11 @@
+{
+  "title": "Qazia Flux Schnell",
+  "description": "Fast image generation using Flux Schnell for Albanian/Italian trap music video pipeline",
+  "type": "serverless",
+  "category": "image",
+  "config": {
+    "runsOn": "GPU",
+    "containerDiskInGb": 20,
+    "cuda": "12.1"
+  }
+}
