@@ -25,6 +25,11 @@ def load_model():
 
 def handler(job):
     job_input = job.get("input", {})
+
+    # Quick health-check mode — no model download needed
+    if job_input.get("test_mode"):
+        return {"status": "ok", "message": "handler ready"}
+
     prompt       = job_input.get("prompt", "cinematic scene")
     aspect_ratio = job_input.get("aspect_ratio", "16:9")
     steps        = int(job_input.get("num_inference_steps", 4))
